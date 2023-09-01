@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(139, 159, 160);
+        }
+
+        .cal {
+            margin-left: 113rem;
+            height: 126rem;
+            width: 100rem;
+            border: 2px solid black;
+            margin-top: 322px;
+            background-color: grey ;
+            border: solid;
+            border-radius: 50px;
+            
+        }
+
+        button {
+            width: 315px;
+            height: 315px;
+            margin: 41px;
+            padding: 40px;
+            font-size: 120px;
+            border-radius: 50%;
+             background-color: black;
+            box-shadow: 20px 10px rgb(44, 47, 48);
+            color: white;
+        }
+
+        
+        
+
+        input {
+            margin-top: 114px;
+            margin-left: 106px;
+            width: 86rem;
+            height: 17rem;
+            font-size: 125px;
+            border: solid;
+
+
+        }
+        .btn{
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cal">
+        <input type="text" id="display" readonly>
+        <div class="uper">
+            <div class="first">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div class="second">
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')">*</button>
+            </div>
+            <div class="third">
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div class="fourth">
+                <button onclick="appendToDisplay('0')">0</button>
+                <button  onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="calculate()" class="btn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
